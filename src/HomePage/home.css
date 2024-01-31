@@ -7,7 +7,7 @@ section {
     margin: 1 10rem;
     box-sizing: border-box;
     min-height: fit-content;
-    background-color: beige;
+    background-color: white;
     font-family: 'Lato', sans-serif;
     font-family: 'Montserrat', sans-serif;
     /* border: 1px solid #ddd; /* Set border style */
@@ -28,19 +28,33 @@ section {
     display: flex;
     justify-content: center;
     gap: 10rem;
-    height: 60vh;
+    height: 90vh;
 
 }
 
 #experince {
-    display: flex;
+    /* display: flex; */
     justify-content: center;
     gap: 10rem;
-    height: 50vh;
+    height: 70vh;
     border-top: 10rem;
     border-top-color: white;
+    /* margin: 0; /* not sure  */
+    /* padding: 0; not sure  */ 
     background-color: black;
 
+}
+
+#projects{
+        /* display: flex; */
+        justify-content: center;
+        gap: 10rem;
+        height: 70vh;
+        border-top: 10rem;
+        border-top-color: white;
+        /* margin: 0; /* not sure  */
+        /* padding: 0; not sure  */ 
+        background-color: white;
 }
 
 .card {

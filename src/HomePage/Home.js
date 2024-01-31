@@ -2,6 +2,8 @@ import React, { Component } from 'react'
 import { redirect } from 'react-router-dom'
 import './home.css'
 import "../asserts/Sai Resume_ATS v1.1.pdf"
+import Timeline from "./Timeline.js"
+import "./timeline.css"
 // import {mac} from"../asserts/mac.jpg"
 
 const openresume= () => {
@@ -52,9 +54,10 @@ export default class Home extends Component {
                 <button className='btn btn2' onClick={openitem}>Item</button>
             </div>
         </div> */}
-        <div>
-
-        </div>
+        <Timeline/>
+      </section>
+      <section id='projects'>
+    
       </section>
     
     </>
