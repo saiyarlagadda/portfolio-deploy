@@ -4,6 +4,8 @@ import './home.css'
 import "../asserts/Sai Resume_ATS v1.1.pdf"
 import Timeline from "./Timeline.js"
 import "./timeline.css"
+import ProjectView from './Projectview'
+import './Projectview.css'
 // import {mac} from"../asserts/mac.jpg"
 
 const openresume= () => {
@@ -57,9 +59,8 @@ export default class Home extends Component {
         <Timeline/>
       </section>
       <section id='projects'>
-    
+        <ProjectView/>
       </section>
-    
     </>
     )
   }

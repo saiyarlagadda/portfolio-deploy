@@ -49,12 +49,12 @@ section {
         /* display: flex; */
         justify-content: center;
         gap: 10rem;
-        height: 70vh;
+        height: 80vh;
         border-top: 10rem;
-        border-top-color: white;
+        border-top-color: black;
         /* margin: 0; /* not sure  */
         /* padding: 0; not sure  */ 
-        background-color: white;
+        /* background-color: white; */
 }
 
 .card {
