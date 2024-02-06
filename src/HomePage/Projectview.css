@@ -42,6 +42,8 @@
     justify-content:space-around; /* Adjust as needed to control the spacing */
     align-items: center; /* Align items vertically in the center */
     flex-wrap: wrap;
+    animation-duration: 1.5S;
+
 }
 
 .cards {
@@ -159,3 +161,95 @@ margin-right: 10px;
     border-radius: 50%;
     box-shadow: -10px 10px 0 yellow;
 } */ 
+
+
+/* YourComponent.css */
+.card-container {
+    position: relative;
+    width: 600px;
+    height: 500px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 15px;
+    margin-bottom: 20px;
+    animation-duration: 2s;
+  }
+  
+  .card-container .picture-container {
+    width: 100%;
+    height: 60%;
+    overflow: hidden;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-image: url('../asserts/wolfgang-hasselmann-nX3cS5pgGNY-unsplash.jpg'); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.3s ease; /* Apply transition to transform property */
+  }
+  
+  .card-container:hover .picture-container {
+    transform: scale(1.1); /* Apply zoom-in effect on hover */
+  }
+  
+  .card-container .picture-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .text-container {
+    padding: 20px;
+    background-color: #ffffff;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+  
+
+
+  /*Github Button*/
+  .gtb-btn2 {
+    font-weight: 800;
+    transition: all 300ms ease;
+    padding: 1rem;
+    width: 6rem;
+    border-radius: 2rem;
+    display:flex;
+    justify-content: center;
+    gap: 1rem;
+    animation-duration: 2.5s;
+}
+.gtb-btn2{
+    border: rgb(53, 53, 53) 0.1rem solid;
+    }
+
+.gtb-btn2:hover{
+    cursor: pointer;
+    background: rgb(53, 53, 53);
+    color :white;
+    animation-duration: 2.1s;
+}
+
+
+
+/*Fade In Bottmom Animation*/
+
+.fadeInBottom { animation-name: fadeInBottom }
+@keyframes fadeInBottom {
+    from {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+    to { opacity: 1 }
+}
+
+.fadeIn { animation-name: fadeIn }
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        /* transform: translateY(100%); */
+    }
+    to { opacity: 1 }
+}
