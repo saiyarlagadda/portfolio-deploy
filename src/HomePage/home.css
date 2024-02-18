@@ -49,7 +49,7 @@ section {
         /* display: flex; */
         justify-content: center;
         gap: 10rem;
-        height: 80vh;
+        height: 80vh; /*change this for hamburger menu*/
         border-top: 10rem;
         border-top-color: black;
         /* margin: 0; /* not sure  */

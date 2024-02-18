@@ -31,6 +31,7 @@
 .exp {
     font-family: 'Lato', sans-serif;
     font-family: 'Montserrat', sans-serif;
+    /* height: 100vh; */
 }
 .exp1 h1 {
     font-family: 'Lato', sans-serif;
@@ -175,7 +176,7 @@ margin-right: 10px;
     flex-wrap: wrap;
     margin: 15px;
     margin-bottom: 20px;
-    animation-duration: 2s;
+    animation-duration: 2.5s;
   }
   
   .card-container .picture-container {
@@ -187,7 +188,7 @@ margin-right: 10px;
     background-image: url('../asserts/wolfgang-hasselmann-nX3cS5pgGNY-unsplash.jpg'); /* Replace with your image path */
     background-size: cover;
     background-position: center;
-    transition: transform 0.3s ease; /* Apply transition to transform property */
+    transition: transform 0.5s ease; /* Apply transition to transform property */
   }
   
   .card-container:hover .picture-container {
