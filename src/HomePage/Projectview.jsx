@@ -42,7 +42,9 @@
     render() {
       return(
         <>
+
         <div className='exp'>
+          <h2>My Work..</h2>
         <div className='exp1 '>
           <div className="card-container fadeIn">
             <div className="picture-container">
@@ -102,6 +104,7 @@
             </div>
           </div> */}
           </div>
+          <h2>More..</h2>
           </div>
           </>
       )

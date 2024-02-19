@@ -32,6 +32,12 @@
     font-family: 'Lato', sans-serif;
     font-family: 'Montserrat', sans-serif;
     /* height: 100vh; */
+    height: fit-content;
+}
+.exp h2{
+    text-align: center;
+    overflow: hidden;
+    font-size: x-large;
 }
 .exp1 h1 {
     font-family: 'Lato', sans-serif;

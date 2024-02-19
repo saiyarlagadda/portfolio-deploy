@@ -1,32 +1,36 @@
-import React, { Component } from 'react';
+
+import React, { useState, useEffect } from 'react';
 import '../HomePage/scroll.css';
 
-// let line1=document.querySelector('.line1');
-// let line2=document.querySelector('.line2');
+const Scroll = () => {
+  const [scrollPos, setScrollPos] = useState(100); // Initial scroll position
 
-// window.onscroll=()=>{
-//   let pos =window.scrollY-800;
-//   line1.style.left='${pos}px';
-//   line1.style.right='${pos}px';
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrollPos(window.scrollY);
+    };
 
-// }
+    window.addEventListener('scroll', handleScroll);
 
-export default class scroll extends Component {
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
 
-
-  render() {
-    return (
-      <>
-      <div className='line-scroll'>
-      <div className='line1'>
-        <h2>UX Desiner Data Science Internet of Things</h2>
+  return (
+    <>
+    <div className="scroll-section">
+      <div className="scroll-text-container" style={{ transform: `translateX(-${scrollPos}px)` }}>
+        <div className="scroll-text">
+          <span>&bull;Data Science &bull;Web Devlopment &bull;BCI &bull;IOT</span>
+        </div>
       </div>
-      <div className='line2'>
-        <h2> Brain Computer Interface Cloud Computing</h2>
-      </div>
-      </div>
-      </>
-    )
-  }
-}
+    </div>
+    </>
+  );
+};
+
+export default Scroll;
+
+
 

@@ -3,7 +3,8 @@
 
 section {
     padding-top: 4vh;
-    height: 96vh;
+    /* height: 96vh; */
+    height: fit-content;
     margin: 1 10rem;
     box-sizing: border-box;
     min-height: fit-content;
@@ -49,12 +50,14 @@ section {
         /* display: flex; */
         justify-content: center;
         gap: 10rem;
-        height: 80vh; /*change this for hamburger menu*/
-        border-top: 10rem;
-        border-top-color: black;
+        /* height: 85vh; change this for hamburger menu */
+        /* border-top: 10rem; */
+        /* border-top-color: black; */
         /* margin: 0; /* not sure  */
         /* padding: 0; not sure  */ 
         /* background-color: white; */
+        height: fit-content;
+
 }
 
 .card {

@@ -1,22 +1,43 @@
-.line-scroll{
-  margin:0;
-  padding:0;
-  color: gold;
-  font-size: 1.5rem;
-  font-weight: 700;
-  overflow-x: hidden;
-}
-.line1{
-  position: fixed;
-  top:40%;
-  left:-800px;
-  transform:translateY(-50%);
-  white-space: nowrap;
-}
 
-.line2{
-  position: fixed;
-  top:45%;
-  right:-800px;
+.scroll-section {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+} 
+
+.scroll-text-container {
   white-space: nowrap;
-}
+  /* background-color: black; */
+ } 
+
+.scroll-text {
+  display: inline-block;
+  font-size: 20px;
+  /* padding-left: 800px; */
+  padding-right: 10px;
+  transition: transform 0.3s ease;
+  /* text-align: center;
+  justify-content: center; */
+  padding-top: 20vh;
+ } 
+
+.scroll-text span{
+  left: 60px;
+  position: relative;
+  padding-left: 700px;
+  padding-top: 1000px;
+  color: bisque;
+  font-weight: 900;
+  font-size: 10vh;
+ }
+
+ /* .left{
+  left: 60px;
+  position: relative;
+  padding-left: 1200px;
+  padding-top: 1000px;
+  color: bisque;
+  font-weight: 900;
+  font-size: xx-large;
+ } */
+ 
