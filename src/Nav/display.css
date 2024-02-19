@@ -1,13 +1,11 @@
-
-/* We are not using this */
-
-/* 
-@media screen and (max-width: 1200px){
-    .main-nav {
-        display:none
+@media screen and (max-width: 1200px) {
+    /* Hide regular navigation menu */
+    #main-nav {
+      display: none;
     }
-    .hamburger-nav{
-        display: flex;
+  
+    /* Display hamburger menu */
+    #hamburger-nav {
+      display: flex;
     }
-} */
-
+  }

@@ -43,7 +43,6 @@ section {
     /* margin: 0; /* not sure  */
     /* padding: 0; not sure  */ 
     background-color: black;
-
 }
 
 #projects{
@@ -204,3 +203,20 @@ border: rgb(53, 53, 53) 0.1rem solid;
     }
     to { opacity: 1 }
 }
+
+#ham-profile{
+    justify-content: center;
+    display: none;
+    margin: auto;
+}
+
+#ham-experience{
+    justify-content: center;
+    gap: 10rem;
+    height: auto;
+    border-top: 10rem;
+    border-top-color: white;
+    background-color: black;
+    display: none;
+}
+

@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { redirect } from 'react-router-dom'
 import './home.css'
+import '../HomePage/media_home.css'
 import "../asserts/Sai Resume_ATS v1.1.pdf"
 import Timeline from "./Timeline.jsx"
 import "./timeline.css"
@@ -39,25 +40,31 @@ export default class Home extends Component {
                 <button className='btn btn1' onClick={openresume}>Download</button>
                 <button className='btn btn2' onClick={openitem}>Item</button>
             </div>
-            
-
         </div>
       </section>
-      {/* Experience section */}
-      <section id='experince'>
-      {/* <div className='pic_container'>
+      <section id='ham-profile'>
+        {/* <div className='pic_container fadeIn'>
             <Mac/>
-        </div>
-        <div className='text_container'>
-            <p className='text_container_p1'>Hello! I'm Sai Yarlagadda</p>
-            <h1 className='text_container_main'>Master's at Purdue University</h1>
-            <p className='text_container_p2'>A BCI Researcher | Software Engineer | intern seeker<br/></p>
-            <div className='btn_container'>
+        </div> */}
+        <div className='text_container fadeInBottom' >
+            <p className='text_container_p1 fadeInBottom'>Hello! I'm Sai Yarlagadda</p>
+            <h1 className='text_container_main fadeInBottom'>Master's at Purdue University</h1>
+            <p className='text_container_p2 fadeInBottom'>A BCI Researcher | Software Engineer<br/></p>
+            {/* <p className='smoothed'>Smoothed text</p> */}
+            <div className='btn_container fadeInBottom'>
                 <button className='btn btn1' onClick={openresume}>Download</button>
                 <button className='btn btn2' onClick={openitem}>Item</button>
             </div>
-        </div> */}
+        </div>
+      </section>
+      
+      {/* Experience section */}
+      <section id='experince'>
         {/* <Timeline/> */}
+        <Scroll/>
+      </section>
+      {/* This is Hamburger experience section */}
+      <section id='ham-experience'>
         <Scroll/>
       </section>
       {/* Project Section */}

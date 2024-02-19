@@ -81,7 +81,7 @@
             </div>
             <div className="text-container">
               <h1>Brain-Computer Interface Project</h1>
-              <p>BCI Research Application -Coming Soon.. </p>
+              <p>BCI Research Application - Coming Soon.. </p>
               <div class="gtb-btn2 fadeInBottom">In Progress</div>
             </div>
           </div>
