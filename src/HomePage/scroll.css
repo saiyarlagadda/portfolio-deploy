@@ -1,0 +1,22 @@
+.line-scroll{
+  margin:0;
+  padding:0;
+  color: gold;
+  font-size: 1.5rem;
+  font-weight: 700;
+  overflow-x: hidden;
+}
+.line1{
+  position: fixed;
+  top:40%;
+  left:-800px;
+  transform:translateY(-50%);
+  white-space: nowrap;
+}
+
+.line2{
+  position: fixed;
+  top:45%;
+  right:-800px;
+  white-space: nowrap;
+}

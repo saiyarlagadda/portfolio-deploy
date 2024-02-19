@@ -2,11 +2,12 @@ import React, { Component } from 'react'
 import { redirect } from 'react-router-dom'
 import './home.css'
 import "../asserts/Sai Resume_ATS v1.1.pdf"
-import Timeline from "./Timeline.js"
+import Timeline from "./Timeline.jsx"
 import "./timeline.css"
-import ProjectView from './Projectview'
+import ProjectView from './Projectview.jsx'
 import './Projectview.css'
 // import {mac} from"../asserts/mac.jpg"
+import Scroll from './scroll.jsx'
 
 const openresume= () => {
     window.open("/src/asserts/Sai Resume_ATS v1.1.pdf")
@@ -56,7 +57,9 @@ export default class Home extends Component {
                 <button className='btn btn2' onClick={openitem}>Item</button>
             </div>
         </div> */}
-        <Timeline/>
+        {/* <Timeline/> */}
+        <Scroll/>
+
       </section>
       {/* Project Section */}
       <section id='projects'>
