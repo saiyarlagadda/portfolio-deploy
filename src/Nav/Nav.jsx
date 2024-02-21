@@ -21,18 +21,18 @@ const Nav = () => {
       {/* Main navigation */}
       <nav id='main-nav'>
         <div className='logo'>
-          <a href='#'>Sai Yarlagadda</a>
+          <a href='/'>Sai Yarlagadda</a>
         </div>
         <div className='menu-link'>
           <ul>
             <li>
-              <a href='#' className='underline'>About</a>
+              <a href='/about' className='underline'>About</a>
             </li>
             <li>
-              <a href='#' className='underline'>Projects</a>
+              <a href='/projects' className='underline'>Projects</a>
             </li>
             <li>
-              <a href='#' className='underline'>Contact</a>
+              <a href='/contact' className='underline'>Contact</a>
             </li>
           </ul>
         </div>
@@ -41,7 +41,7 @@ const Nav = () => {
       {/* Hamburger navigation */}
       <nav id='hamburger-nav'>
         <div className='logo'>
-          <a href='#'>Sai Yarlagadda</a>
+          <a href='/'>Sai Yarlagadda</a>
         </div>
         <div className='hamburger-menu'>
           <div className='hamburger-icon' onClick={toggleMenu}>
@@ -54,13 +54,13 @@ const Nav = () => {
             <div className='hamburger-link'>
               <ul>
                 <li>
-                  <a href='#' onClick={toggleMenu}>About</a>
+                  <a href='/about' onClick={toggleMenu}>About</a>
                 </li>
                 <li>
-                  <a href='#' onClick={toggleMenu}>Projects</a>
+                  <a href='/projects' onClick={toggleMenu}>Projects</a>
                 </li>
                 <li>
-                  <a href='#' onClick={toggleMenu}>Contact</a>
+                  <a href='/contact' onClick={toggleMenu}>Contact</a>
                 </li>
               </ul>
             </div>
