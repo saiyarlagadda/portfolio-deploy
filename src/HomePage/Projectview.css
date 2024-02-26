@@ -169,6 +169,9 @@ margin-right: 10px;
     box-shadow: -10px 10px 0 yellow;
 } */ 
 
+.more{
+    cursor: pointer;
+}
 
 /* YourComponent.css */
 .card-container {
@@ -260,3 +263,5 @@ margin-right: 10px;
     }
     to { opacity: 1 }
 }
+
+

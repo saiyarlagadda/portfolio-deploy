@@ -9,9 +9,11 @@ import ProjectView from './Projectview.jsx'
 import './Projectview.css'
 // import {mac} from"../asserts/mac.jpg"
 import Scroll from './scroll.jsx'
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+
 
 const openresume= () => {
-    window.open("/src/asserts/Sai Resume_ATS v1.1.pdf")
+    window.open("https://github.com/saiyarlagadda/Resume/blob/f271d27b1b873255fdb27a22a44fdb116fc40487/Sai%20Resume_ATS%20v1.5.pdf")
 }
 
 const openitem=() => {
@@ -22,6 +24,9 @@ const Mac=() =>{
     <img src='../asserts/mac.jpg'/>
 
 }
+const Linkdin = () => {
+  window.location.href = 'https://www.linkedin.com/in/saiteja-y/';
+};
 
 export default class Home extends Component {
   render() {
@@ -38,7 +43,8 @@ export default class Home extends Component {
             {/* <p className='smoothed'>Smoothed text</p> */}
             <div className='btn_container fadeInBottom'>
                 <button className='btn btn1' onClick={openresume}>Download</button>
-                <button className='btn btn2' onClick={openitem}>Item</button>
+                {/* <button className='btn btn2' onClick={openitem}>Item</button> */}
+                <LinkedInIcon sx={{fontSize:60}} onClick={Linkdin}/>
             </div>
         </div>
       </section>

@@ -1,0 +1,88 @@
+#about-container{
+    position: relative;
+    /* background-color: green; */
+    align-items: center;
+    width: 100%;
+    margin: auto;
+    /* height: auto; */
+    flex-direction: row;
+    flex-wrap: wrap;
+    display: flex;
+    opacity: 0;
+    animation: fadeIn 3s ease forwards;
+}
+
+.about-div1{
+    background-color: yellow;
+    align-items: center;
+    width: 100%;
+    padding: 10vh;
+}
+
+.cards {
+    width: 1000px; /* Adjust the width as needed */
+    height: 1000px; /* Adjust the height as needed */
+    /* border: 1px solid #ddd; Set border style */
+    border-radius: 20px; /*Add rounded corners*/
+    padding: 16px; /* Add padding to the content */
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); Add a subtle box shadow */
+    background-color: #fff; /* Set background color */
+    margin: 16px; /* Add margin for spacing */
+    position: relative;
+    flex: 1 0 calc(40% - 16px);
+    /* background-color: rgba(222,221,219,255); */
+    /* background-color: blue; */
+    /* flex-direction: row-reverse; */
+    flex-basis:48%;
+}
+
+.pic-cards {
+    width: 150px; /* Adjust the width as needed */
+    height: 300px; /* Adjust the height as needed */
+    /* border: 1px solid #ddd; Set border style */
+    border-radius: 20px; /*Add rounded corners*/
+    padding: 16px; /* Add padding to the content */
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); Add a subtle box shadow */
+    background-color: #fff; /* Set background color */
+    margin: 16px; /* Add margin for spacing */
+    position: relative;
+    flex: 1 0 calc(40% - 16px);
+    background-color: black;
+    /* flex-direction: row-reverse; */
+    flex-basis: 32%;
+}
+/* .pic-cont{
+    background-color: azure;
+    position: absolute;
+} */
+
+.cards h2{
+    align-items: center;
+}
+
+.line{
+    background-color: black;
+    width: 85%;
+    height: 1px;
+}
+.about-text{
+    width: 80%;
+}
+
+.semi-bold{
+    font-weight: 500;
+    font-size: 20px;
+}
+
+#ham-about-container{
+    display: none;
+}
+
+
+.fadein-cont{animation: fadein}
+@keyframes fadein {
+    from{
+        opacity: 0;
+    }
+    to {opacity: 1;}
+}

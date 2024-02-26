@@ -208,6 +208,7 @@ border: rgb(53, 53, 53) 0.1rem solid;
     justify-content: center;
     display: none;
     margin: auto;
+    padding: 10vh;
 }
 
 #ham-experience{

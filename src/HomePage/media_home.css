@@ -21,3 +21,14 @@
       display: flex;
     }
   }
+
+  @media screen and (max-width: 1200px) {
+
+    #about-container {
+      display: none;
+    }
+  
+    #ham-about-container {
+      display: flex;
+    }
+  }

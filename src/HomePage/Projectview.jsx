@@ -37,26 +37,83 @@
   // }
 
   import React, { Component } from 'react'
-  
+
+/*Scroll animation timeline.*/
+
+
+
+/*Scroll animation timeline.*/
   export default class Projectview extends Component {
+    
+    // constructor(props) {
+    //   super(props);
+    //   this.artshopRef = React.createRef();
+    //   this.depressionRef = React.createRef();
+    //   this.iotRef = React.createRef();
+    //   this.bciRef = React.createRef();
+    // }
+  
+    // componentDidMount() {
+    //   const options = {
+    //     root: null,
+    //     rootMargin: '0px',
+    //     threshold: 1, // Adjust as needed to control when the intersection is detected
+    //   };
+  
+    //   this.observeElement(this.artshopRef.current);
+    //   this.observeElement(this.depressionRef.current);
+    //   this.observeElement(this.iotRef.current);
+    //   this.observeElement(this.bciRef.current);
+    // }
+  
+    // componentWillUnmount() {
+    //   if (this.observer) {
+    //     this.observer.disconnect();
+    //   }
+    // }
+  
+    // observeElement(element) {
+    //   if (!element) return;
+  
+    //   this.observer = new IntersectionObserver(this.handleIntersection, {
+    //     root: null,
+    //     rootMargin: '0px',
+    //     threshold: 1, // Adjust as needed to control when the intersection is detected
+    //   });
+    //   this.observer.observe(element);
+    // }
+  
+    // handleIntersection = (entries, observer) => {
+    //   entries.forEach(entry => {
+    //     if (entry.isIntersecting) {
+    //       entry.target.classList.add('fadeIn');
+    //       entry.target.classList.add('fadeInBottom');
+    //     } else {
+    //       entry.target.classList.remove('fadeIn');
+    //       entry.target.classList.remove('fadeInBottom');
+    //     }
+    //   });
+    // };
+    
+    
     render() {
       return(
         <>
 
         <div className='exp'>
           <h2>My Work..</h2>
-        <div className='exp1 '>
-          <div className="card-container fadeIn">
+        <div className='exp1'>
+          <div className="card-container fadeIn" ref={this.artshopRef}>
             <div className="picture-container">
             </div>
             <div className="text-container">
               <h1>ARTSTHOP</h1>
               <p>ARTSTHOP is Website Designed for Artist to potrait there art.</p>
-              <div class="gtb-btn2 fadeInBottom">GitHub</div>
+              <div class="gtb-btn2 fadeInBottom" ref={this.artshopRef}>GitHub</div>
             </div>
           </div>
 
-          <div className="card-container fadeIn">
+          <div className="card-container fadeIn" ref={this.depressionRef}>
             <div className="picture-container">
             </div>
             <div className="text-container">
@@ -66,7 +123,7 @@
             </div>
           </div>
 
-          <div className="card-container fadeIn">
+          <div className="card-container fadeIn" ref={this.iotRef}>
             <div className="picture-container">
             </div>
             <div className="text-container">
@@ -76,13 +133,13 @@
             </div>
           </div>
 
-          <div className="card-container fadeIn">
+          <div className="card-container fadeIn" ref={this.bciRef}>
             <div className="picture-container">
             </div>
             <div className="text-container">
               <h1>Brain-Computer Interface Project</h1>
               <p>BCI Research Application - Coming Soon.. </p>
-              <div class="gtb-btn2 fadeInBottom">In Progress</div>
+              <div class="gtb-btn2 fadeInBottom" ref={this.cardRef}>In Progress</div>
             </div>
           </div>
 
@@ -104,7 +161,7 @@
             </div>
           </div> */}
           </div>
-          <h2>More..</h2>
+          <h2 className='more'>More..</h2>
           </div>
           </>
       )
