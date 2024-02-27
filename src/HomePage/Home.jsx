@@ -39,7 +39,7 @@ export default class Home extends Component {
         <div className='text_container fadeInBottom' >
             <p className='text_container_p1 fadeInBottom'>Hello! I'm Sai Yarlagadda</p>
             <h1 className='text_container_main fadeInBottom'>Master's at Purdue University</h1>
-            <p className='text_container_p2 fadeInBottom'>A BCI Researcher | Software Engineer | Intern seeker<br/></p>
+            <p className='text_container_p2 fadeInBottom'>A BCI Researcher | Software Engineer | ML Engineer<br/></p>
             {/* <p className='smoothed'>Smoothed text</p> */}
             <div className='btn_container fadeInBottom'>
                 <button className='btn btn1' onClick={openresume}>Download</button>
@@ -54,12 +54,13 @@ export default class Home extends Component {
         </div> */}
         <div className='text_container fadeInBottom' >
             <p className='text_container_p1 fadeInBottom'>Hello! I'm Sai Yarlagadda</p>
-            <h1 className='text_container_main fadeInBottom'>Master's at Purdue University</h1>
-            <p className='text_container_p2 fadeInBottom'>A BCI Researcher | Software Engineer<br/></p>
+            <h1 className='text_container_main fadeInBottom'>Master's @ Purdue University</h1>
+            <p className='text_container_p2 fadeInBottom'>BCI Researcher | Software Engineer<br/></p>
             {/* <p className='smoothed'>Smoothed text</p> */}
             <div className='btn_container fadeInBottom'>
                 <button className='btn btn1' onClick={openresume}>Download</button>
-                <button className='btn btn2' onClick={openitem}>Item</button>
+                <LinkedInIcon sx={{fontSize:60}} onClick={Linkdin}/>
+                {/* <button className='btn btn2' onClick={openitem}>Item</button> */}
             </div>
         </div>
       </section>

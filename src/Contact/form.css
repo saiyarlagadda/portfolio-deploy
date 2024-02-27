@@ -1,0 +1,41 @@
+.contact-form{
+    margin: 2rem;
+    /* font-family: 'Lato', sans-serif; */
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+.form-group{
+    margin: 10px;
+    font-size: 20px;
+    width:100%;
+    margin-bottom:2rem;
+    align-items: center;
+    /* padding: 1.2rem; */
+}
+
+label{
+    font-size: 1.5rem;
+    color: white;
+}
+
+input,textarea{
+    width:100%;
+    font-size:1.5rem;
+    outline: none;
+    border: none;
+    border-color: black;
+    border-radius: 8px;
+    margin-top: 1rem;
+
+}
+
+textarea{
+    min-height: 250px;
+    resize: vertical;
+
+}
+
+.btn2{
+    background-color: white;
+}

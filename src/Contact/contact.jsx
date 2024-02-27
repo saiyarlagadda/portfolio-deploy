@@ -3,6 +3,7 @@ import "./contact.css"
 import PhoneIcon from '@mui/icons-material/Phone';
 import EmailIcon from '@mui/icons-material/Email';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
+import Form from "./Form";
 export default class Contact extends Component {
   render() {
     return (
@@ -39,6 +40,7 @@ export default class Contact extends Component {
       </div>
       <div className="contact-right">
         {/* Content for right container */}
+        <Form/>
       </div>
     </div>
       </>

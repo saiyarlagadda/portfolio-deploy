@@ -1,5 +1,5 @@
 .contact-container {
-    max-width: 1200px;
+    /* max-width: 1200px; */
     margin: 0 auto;
     padding: 20px;
     font-family: 'Lato', sans-serif;
@@ -35,8 +35,8 @@
   }
 
   .contact-form-container {
-    max-width: 1200px;
-    margin: 0 auto;
+    /* max-width: 1200px; */
+    /* margin: 0 auto; */
     padding: 20px;
     font-family: 'Lato', sans-serif;
     font-family: 'Montserrat', sans-serif;
@@ -49,17 +49,17 @@
   .contact-right {
     flex: 1; /* Equal width for both containers */
     padding: 20px;
-    width: auto;
+    width: 100%;
     height: 50vh;
   }
   
   .contact-left {
-    background-color: #a4c21e; /* Example background color */
+    /* Example background color */
     order: 1; /* Place left container first */
   }
   
   .contact-right {
-    background-color: #3a1f53; /* Example background color */
+    background-color: black; /* Example background color */
     order: 2; /* Place right container second */
   }
   
@@ -79,7 +79,6 @@
   .contact-item i {
     margin-right: 10px;
   }
-
 
 
   
