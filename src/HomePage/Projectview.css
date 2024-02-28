@@ -194,12 +194,14 @@ margin-right: 10px;
     overflow: hidden;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
-    background-image: url('../asserts/wolfgang-hasselmann-nX3cS5pgGNY-unsplash.jpg'); /* Replace with your image path */
     background-size: cover;
     background-position: center;
     transition: transform 0.5s ease; /* Apply transition to transform property */
   }
   
+  /* .picture-container{
+    background-image: url('../asserts/wolfgang-hasselmann-nX3cS5pgGNY-unsplash.jpg');
+  } */
   .card-container:hover .picture-container {
     transform: scale(1.1); /* Apply zoom-in effect on hover */
   }
@@ -233,6 +235,8 @@ margin-right: 10px;
 }
 .gtb-btn2{
     border: rgb(53, 53, 53) 0.1rem solid;
+    text-decoration: none;
+    color: inherit;
     }
 
 .gtb-btn2:hover{
@@ -265,3 +269,4 @@ margin-right: 10px;
 }
 
 
+/*Test example*/

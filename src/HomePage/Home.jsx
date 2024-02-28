@@ -13,17 +13,15 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 
 
 const openresume= () => {
-    window.open("https://github.com/saiyarlagadda/Resume/blob/f271d27b1b873255fdb27a22a44fdb116fc40487/Sai%20Resume_ATS%20v1.5.pdf")
+    window.location.href="https://github.com/saiyarlagadda/Resume/raw/main/Sai%20Resume_ATS%20v1.5.pdf";
 }
 
-const openitem=() => {
-    redirect.open("/src/asserts/Sai Resume_ATS v1.1.pdf")
-}
 
-const Mac=() =>{
-    <img src='../asserts/mac.jpg'/>
 
-}
+// const Mac=() =>{
+//     <img src='../asserts/mac.jpg'/>
+
+// }
 const Linkdin = () => {
   window.location.href = 'https://www.linkedin.com/in/saiteja-y/';
 };
@@ -34,7 +32,8 @@ export default class Home extends Component {
       <>
       <section id='profile'>
         <div className='pic_container fadeIn'>
-            <Mac/>
+          <img src={require('../asserts/me.jpg')}/>
+            {/* <Mac sx={{backgroundImage: `url(${imgurl})` }}/> */}
         </div>
         <div className='text_container fadeInBottom' >
             <p className='text_container_p1 fadeInBottom'>Hello! I'm Sai Yarlagadda</p>

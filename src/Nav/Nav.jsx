@@ -6,6 +6,7 @@ import '../Nav/display.css'
 const Nav = () => {
   // State to manage the menu open/close state
   const [menuOpen, setMenuOpen] = useState(false);
+  
 
   // Function to toggle the menu state
   const toggleMenu = () => {
@@ -45,14 +46,14 @@ const Nav = () => {
         </div>
         <div className='hamburger-menu'>
           <div className='hamburger-icon' onClick={toggleMenu}>
-            <span></span>
-            <span></span>
-            <span></span>
+            <span className='bar'></span>
+            <span className='bar'></span>
+            <span className='bar'></span>
           </div>
           {/* Conditionally render hamburger links */}
           {menuOpen && (
             <div className='hamburger-link'>
-              <ul>
+              <ul className='menu'>
                 <li>
                   <a href='/about' onClick={toggleMenu}>About</a>
                 </li>

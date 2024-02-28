@@ -1,84 +1,71 @@
-
+/* Import fonts from Google Fonts (optional) */
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Montserrat:wght@300&display=swap');
 
-
-
-  #main-nav {
-    width: 100%;
-    height: auto;
-    display: grid;
-    grid-template-columns: 10rem 2fr 2fr 2fr 10rem;
-    font-family: 'Lato', sans-serif;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 900;
-  }
-
-  .logo{
-    display: grid;
-    /* background-color: ; */
-    grid-column: 2/3;
-    justify-content: start;
-    align-items: center;
-    font-size: 2rem;
-    /* text-decoration: none; */
-  }
-
-  .logo a {
-    text-decoration: none;
-    color: black;
-  }
-
-  .menu-link{
-    grid-column: 3/5;
-  }
-
-  .menu-link ul {
-    height: 2rem;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    list-style-type: none; 
-  }
-
-  .menu-link ul li {
-    font-size: 1.4rem;
-  }
-
-  .menu-link ul li a {
-    text-transform: capitalize;
-    color: rgba(0, 0, 3, 0.8);
-    /* transition: 0.5s;
-    /* opacity: 1; */
-    /* transition: all 300ms; */ 
-    text-decoration: none;
-    /* transition: color 1s ease,text-decoration 1s ease; */
-    text-decoration-color: white;
-  }
-  
-  .menu-link ul li a:hover {
-    transform-origin: left;
-    color: gray;
-    /* text-decoration : underline 3px; */
-    text-underline-offset: 1rem;
-    /* transition: all 2s; */
-  }
-
-  /*New-Hamburger Menu*/
-#hamburger-nav{
-  position: relative;
-  display: none;
+/* Main navigation styles */
+#main-nav {
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-columns: 10rem 2fr 2fr 2fr 10rem;
   font-family: 'Lato', sans-serif;
   font-family: 'Montserrat', sans-serif;
 }
 
-.hamburger-menu{
+.logo {
+  display: grid;
+  grid-column: 2/3;
+  justify-content: start;
+  align-items: center;
+  font-size: 2rem;
+}
+
+.logo a {
+  text-decoration: none;
+  color: black;
+}
+
+.menu-link {
+  grid-column: 3/5;
+}
+
+.menu-link ul {
+  height: 2rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style-type: none;
+}
+
+.menu-link ul li {
+  font-size: 1.4rem;
+}
+
+.menu-link ul li a {
+  text-transform: capitalize;
+  color: rgba(0, 0, 3, 0.8);
+  text-decoration: none;
+}
+
+.menu-link ul li a:hover {
+  color: gray;
+}
+
+/* Hamburger navigation styles */
+#hamburger-nav {
+  position: relative;
+  display: none; /* Hide initially */
+  font-family: 'Lato', sans-serif;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.hamburger-menu {
   position: relative;
   display: inline;
   margin-left: auto;
   /* align-self: center; */
 }
 
-.hamburger-icon{
+.hamburger-icon {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -87,34 +74,50 @@
   cursor: pointer;
 }
 
-.hamburger-icon span{
+.hamburger-icon span {
+  display: block;
   width: 100%;
   height: 2px;
   background-color: black;
-  transition: all 0.3 ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
-.hamburger-link{
+/* Hamburger link styles */
+.hamburger-link {
   position: absolute;
-  top: 100%;
-  right: 0;
+  top: 3rem; /* Start from the top when open */
+  left: -25rem; /* Align to the left edge of the screen */
+  width: 1500%; /* Stretch to full width */
   background-color: white;
-  width: fit-content;
-  max-height: 0;
-  /* overflow: hidden; */
-  transition: all 0.3 ease-in-out;
+  backdrop-filter: blur(30vh);
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Optional shadow */
+  padding: 1rem; /* Add padding for spacing */
+  transition: all 0.3s ease-in-out; /* Transition for smooth opening/closing */
 }
 
-.hamburger-link a{
+.hamburger-link ul {
+  list-style: none;
+  padding: 0; /* Remove default padding */
+  margin: 0; /* Remove default margin */
+}
+
+.hamburger-link a {
   display: block;
   padding: 10px;
-  text-align: center;
+  text-align: left; /* Align text to the left */
   font-size: 1.5rem;
   color: black;
   text-decoration: none;
-  transition: all 0.3 ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
-.hamburger-link li{
-  list-style: none;
+/* Optional hover styles for links within the hamburger menu */
+.hamburger-link a:hover {
+  background-color: #f0f0f0; /* Lighten background on hover */
 }
+
+/* .menu{
+  background-color: blue;
+  padding: 50px;
+  width: 100%;
+} */

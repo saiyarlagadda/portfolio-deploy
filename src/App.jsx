@@ -1,8 +1,5 @@
-// import logo from './logo.svg';
-// import './App.css';
 import React from "react";
 import { BrowserRouter as Router, Routes, Route} from "react-router-dom";
-// import { Switch} from 'react-router-dom';
 import Nav from "./Nav/Nav.jsx";
 import Home from "./HomePage/Home.jsx";
 import Footer from "./Footer/Footer.jsx";

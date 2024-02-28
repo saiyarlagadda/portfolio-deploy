@@ -8,6 +8,7 @@ export default class About extends Component {
       <section id='about-container'>
         {/* <div className='about-div1'>About</div> */}
         <div className='pic-cards'>
+          <img src={require('../asserts/me.jpg')} className='card-img'/>
           {/* <div className='pic-cont'></div> */}
         </div>
         <div className='cards'>

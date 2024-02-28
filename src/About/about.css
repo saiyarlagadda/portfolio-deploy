@@ -13,7 +13,7 @@
 }
 
 .about-div1{
-    background-color: yellow;
+    /* background-color: yellow; */
     align-items: center;
     width: 100%;
     padding: 10vh;
@@ -48,9 +48,15 @@
     margin: 16px; /* Add margin for spacing */
     position: relative;
     flex: 1 0 calc(40% - 16px);
-    background-color: black;
+    /* background-color: black; */
+    /* overflow: hidden; */
     /* flex-direction: row-reverse; */
     flex-basis: 32%;
+}
+.card-img{
+    width: 100%; /* Ensure the image fits inside the container */
+    height: 100%;
+    object-fit: cover; /* Maintain aspect ratio and cover entire container */ 
 }
 /* .pic-cont{
     background-color: azure;
@@ -75,9 +81,9 @@
     font-size: 20px;
 }
 
-#ham-about-container{
+/* #ham-about-container{
     display: none;
-}
+} */
 
 
 .fadein-cont{animation: fadein}

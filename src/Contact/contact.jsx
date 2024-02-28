@@ -8,12 +8,6 @@ export default class Contact extends Component {
   render() {
     return (
       <>
-      {/* <div className='section-title'>
-        <p>Lets Get-in</p>
-        <h1>Touch</h1>
-      <div className='contact-left'></div>
-      <div className='contact-right'></div>
-      </div> */}
       <div className="contact-container">
       <div className="section-title">
       <p>Let's Get in</p>

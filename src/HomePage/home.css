@@ -83,6 +83,7 @@ section {
     height: 400px; 
     width: 400px;
     background-color: black;
+    /* background-image: '../asserts/me.jpg'; */
     margin: auto 0;
     /* justify-content: bottom; */
     /* flex-wrap: wrap-reverse; */
