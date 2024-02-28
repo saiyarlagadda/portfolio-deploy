@@ -1,0 +1,34 @@
+@media screen and (max-width: 1200px) {
+    /* Hide regular navigation menu */
+    #profile {
+      display: none;
+    }
+  
+    /* Display hamburger menu */
+    #ham-profile {
+      display: flex;
+      margin-bottom: 20px;
+    }
+  }
+
+  @media screen and (max-width: 1200px) {
+
+    #experience {
+      display: none;
+    }
+  
+    .ham-experience {
+      display: flex;
+    }
+  }
+
+  /* @media screen and (max-width: 1200px) {
+
+    #about-container {
+      display: none;
+    }
+  
+    #ham-about-container {
+      display: flex;
+    }
+  } */

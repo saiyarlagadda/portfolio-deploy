@@ -41,7 +41,7 @@
     left: 0;
     right: 100%;
     bottom: -5px;
-    background: grey;
+    background: gray;
     height: 4px;
     transition-property: left right;
     transition-duration: 0.3s;

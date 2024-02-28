@@ -1,0 +1,224 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Montserrat:wght@300&display=swap');
+
+section {
+    padding-top: 4vh;
+    /* height: 96vh; */
+    height: fit-content;
+    margin: 1 10rem;
+    box-sizing: border-box;
+    min-height: fit-content;
+    background-color: white;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    /* border: 1px solid #ddd; /* Set border style */
+    /* border-radius: 8px; Add rounded corners */
+    /* padding: 16px; Add padding to the content  */
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); Add a subtle box shadow */
+    /* background-color: #fff; Set background color */
+    /* margin: 16px; Add margin for spacing */
+
+}
+
+.section-container{
+    display: flex;
+
+}
+
+#profile {
+    display: flex;
+    justify-content: center;
+    gap: 10rem;
+    height: 90vh;
+
+}
+
+#experince {
+    /* display: flex; */
+    justify-content: center;
+    gap: 10rem;
+    height: 70vh;
+    border-top: 10rem;
+    border-top-color: white;
+    /* margin: 0; /* not sure  */
+    /* padding: 0; not sure  */ 
+    background-color: black;
+}
+
+#projects{
+        /* display: flex; */
+        justify-content: center;
+        gap: 10rem;
+        /* height: 85vh; change this for hamburger menu */
+        /* border-top: 10rem; */
+        /* border-top-color: black; */
+        /* margin: 0; /* not sure  */
+        /* padding: 0; not sure  */ 
+        /* background-color: white; */
+        height: fit-content;
+
+}
+
+.card {
+    border: 1px solid #ddd; /* Set border style */
+    border-radius: 8px; /* Add rounded corners */
+    padding: 16px; /* Add padding to the content */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+    background-color: #fff; /* Set background color */
+    margin: 16px; /* Add margin for spacing */
+  }
+  
+  /* h2 {
+    margin-bottom: 8px; /* Add margin below the heading }*/
+
+.smoothed {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-weight: 600;
+
+}
+
+.pic_container {
+    display: flex; 
+    height: 400px; 
+    width: 400px;
+    background-color: black;
+    /* background-image: '../asserts/me.jpg'; */
+    margin: auto 0;
+    /* justify-content: bottom; */
+    /* flex-wrap: wrap-reverse; */
+}
+
+
+.text_container {
+align-self:center;
+text-align:center;
+}
+
+.text_container p {
+font-weight: 600;
+}
+
+.text_container_p1 {
+text-align: center;
+
+}
+
+.text_container_p2 {
+font-size: 1.75rem; 
+margin-bottom: 1rem;
+}
+
+.text_container_main {
+font-size: 3rem; 
+text-align: center;
+}
+
+.btn_container{
+    display:flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.btn {
+    font-weight: 600;
+    transition: all 300ms ease;
+    padding: 1rem;
+    width: 8rem;
+    border-radius: 2rem;
+}
+
+.btn1, .btn2{
+border: rgb(53, 53, 53) 0.1rem solid;
+}
+
+.btn1:hover,
+.btn2:hover{
+    cursor: pointer;
+}
+
+.btn1,
+.btn2:hover{
+    background: rgb(53, 53, 53);
+    color :white
+}
+
+.btn1:hover{
+    background: rgb(0, 0, 0)
+}
+
+.btn2{
+    background: none;
+}
+
+.btn2:hover{
+    border: rgb(255, 255, 255) 0.1rem solid;
+}
+
+.btn_container{
+    gap:1rem;
+}
+
+.pic_container {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
+.text_container{
+    /* animation-duration: 1s; */
+    animation-fill-mode: both;
+}
+
+.text_container_p1{
+    animation-duration: 1.5s;
+}
+
+.text_container_main{
+    animation-duration: 1.8s;
+}
+
+.text_container_p2{
+    animation-duration: 2s;
+}
+.btn_container{
+    animation-duration: 2.1s;
+}
+/* .text_container_main{
+    animation-duration: 2.0s;
+} */
+
+.fadeIn { animation-name: fadeIn }
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        /* transform: translateY(100%); */
+    }
+    to { opacity: 1 }
+}
+
+.fadeInBottom { animation-name: fadeInBottom }
+@keyframes fadeInBottom {
+    from {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+    to { opacity: 1 }
+}
+
+#ham-profile{
+    justify-content: center;
+    display: none;
+    margin: auto;
+    padding: 10vh;
+}
+
+#ham-experience{
+    justify-content: center;
+    gap: 10rem;
+    height: auto;
+    border-top: 10rem;
+    border-top-color: white;
+    background-color: black;
+    display: none;
+}
+
