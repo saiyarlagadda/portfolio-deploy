@@ -27,7 +27,7 @@ const Nav = () => {
         <div className='menu-link'>
           <ul>
             <li>
-              <a href='/about' className='underline'>About</a>
+              <a href='/about' className='underline nav-anchor'>About</a>
             </li>
             <li>
               <a href='/projects' className='underline'>Projects</a>
@@ -42,7 +42,7 @@ const Nav = () => {
       {/* Hamburger navigation */}
       <nav id='hamburger-nav'>
         <div className='logo'>
-          <a href='/'>Sai Yarlagadda</a>
+          <a className='ham-anchor' href='/'>SY</a>
         </div>
         <div className='hamburger-menu'>
           <div className='hamburger-icon' onClick={toggleMenu}>

@@ -7,8 +7,9 @@
   height: auto;
   display: grid;
   grid-template-columns: 10rem 2fr 2fr 2fr 10rem;
-  font-family: 'Lato', sans-serif;
+  /* font-family: 'Lato', sans-serif; */
   font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
 }
 
 .logo {
@@ -26,6 +27,15 @@
 
 .menu-link {
   grid-column: 3/5;
+}
+
+.nav-anchor{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+}
+
+.ham-anchor{
+  font-weight: 900;
 }
 
 .menu-link ul {
