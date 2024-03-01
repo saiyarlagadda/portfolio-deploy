@@ -1,13 +1,27 @@
-
-/* We are not using this */
-
-/* 
-@media screen and (max-width: 1200px){
-    .main-nav {
-        display:none
+@media screen and (max-width: 1200px) {
+    /* Hide regular navigation menu */
+    #main-nav {
+      display: none;
     }
-    .hamburger-nav{
-        display: flex;
+  
+    /* Display hamburger menu */
+    #hamburger-nav {
+      display: flex;
     }
-} */
 
+  }
+
+  /* @media(max-width: 768px){
+    .hamburger-menu{
+      display: block;
+    }
+    .hamburger-menu.active .bar:nth-child(2){
+      opacity: 0;
+    }
+    .hamburger-menu.active .bar:nth-child(1){
+      transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger-menu.active .bar:nth-child(3){
+      transform: translateY(-8px) rotate(-45deg);
+    } */
+  
