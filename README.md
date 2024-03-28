@@ -10,6 +10,7 @@
 
 ## Dockerized image placed.
 Technically useless for me as hosting was done on different indended site.
+Will be utilised when needed.
 
 ## Hosted on firebase hosting.
 Found an issue with build, npm build is issuing a different build and user has to manually correct the issue and point to root.
